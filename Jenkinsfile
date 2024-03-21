@@ -18,7 +18,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t yuzank/nodeapp_test:latest .'
+				sh 'docker build -t yuzank/c0886439_assignment4:latest .'
 			}
 		}
 
@@ -32,7 +32,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push yuzank/nodeapp_test:latest'
+				sh 'docker push yuzank/c0886439_assignment4:latest'
 			}
 		}
 	}
